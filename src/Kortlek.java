@@ -15,7 +15,9 @@ public class Kortlek  {
         // ge de översta kortet
     public kortbunt geOversta() {
         antal=0;
-        return bunt[antal];
+        var oversta= bunt[antal];
+        antal ++;
+        return oversta;
     }
             // innehlleet i kortleken
     public void gorKortlek() {
