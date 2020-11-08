@@ -1,12 +1,13 @@
-    // en metod som hanterar en kortbunt
+// en klassmetod som hanterar en kortbunt
 
 public class kortbunt {
-     // defineria olka "färgnnamnen"
+
+    // defineria olka "färgnnamnen"
     public static final String[] fargNamn={"Hjarter", "Spader", "Ruter", "Klover"};
-            // definera valör
+    // definera valör
     public static final String[] valorNamn={"Ess", "2", "3", "4", "5", "6", "7",
             "8", "9", "10", "Knekt", "Dam", "Kung"};
-        //
+    //
     public final int f;
     public final int v;
 
@@ -19,12 +20,13 @@ public class kortbunt {
         f=farg;
         v=valor;
     }
-
     public int geFarg() {
         return f;
     }
+    public int geValor() { return v; }
 
-    public int geValor() {
-        return v;
+    public String toString() {
+
+        return String.format("%s%s", fargNamn[f], valorNamn[v]);
     }
 }
