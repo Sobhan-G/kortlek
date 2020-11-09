@@ -1,5 +1,7 @@
 // en klassmetod som hanterar en kortbunt
 
+import com.sun.source.tree.ReturnTree;
+
 public class kortbunt {
 
     // defineria olka "färgnnamnen"
@@ -20,13 +22,15 @@ public class kortbunt {
         f=farg;
         v=valor;
     }
-    public int geFarg() {
-        return f;
+    public String geFarg() {
+        return fargNamn[this.f];
     }
-    public int geValor() { return v; }
+    public String geValor() {
+        return valorNamn[this.v];
+    }
 
     public String toString() {
 
-        return String.format("%s%s", fargNamn[f], valorNamn[v]);
+        return String.format("%s %s",geFarg() , geValor());
     }
 }

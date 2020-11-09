@@ -1,8 +1,9 @@
-    // en klass som hanterar en kortlek
+// en klass som hanterar en kortlek
 
 public class Kortlek {
     // en kortbunt 52 platser i array
     public final kortbunt[] bunt=new kortbunt[52];
+
     public int antal=0;
 
     public int geAntal() {
@@ -15,9 +16,13 @@ public class Kortlek {
         antal++;
     }
 
-    public int slumpkort() {
+    public kortbunt slumpkort() {
         int slumpkort=(int) (Math.random() * 52) + 1;
-        return slumpkort;
+        int F = (int) (Math.random() * 3) + 1;
+        int v = (int) (Math.random() * 12) + 1;
+        kortbunt namn= new kortbunt(F,v);
+
+        return namn;
     }
 
     // innehlleet i kortleken
@@ -39,4 +44,3 @@ public class Kortlek {
     }
 
 }
-
