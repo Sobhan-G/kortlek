@@ -6,10 +6,6 @@ public class Kortlek {
 
     public int antal=0;
 
-    public int geAntal() {
-        return antal;
-    }
-
     // en metod för att lägga korten överst i en kortbunt
     public void laggOverst(kortbunt k) {
         bunt[antal]=k;

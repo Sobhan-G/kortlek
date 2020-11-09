@@ -31,6 +31,6 @@ public class kortbunt {
 
     public String toString() {
 
-        return String.format("%s %s",geFarg() , geValor());
+        return String.format("%s %s ",geFarg() , geValor());
     }
 }
