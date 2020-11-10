@@ -1,6 +1,4 @@
-// en klassmetod som hanterar en kortbunt
-
-import com.sun.source.tree.ReturnTree;
+// en klassmetod som hanterar en kortbunt i mitt program kortlek
 
 public class kortbunt {
 
@@ -9,10 +7,10 @@ public class kortbunt {
     // definera valör
     public static final String[] valorNamn={"Ess", "2", "3", "4", "5", "6", "7",
             "8", "9", "10", "Knekt", "Dam", "Kung"};
-    //
+
     public final int f;
     public final int v;
-
+            //
     public kortbunt(int farg, int valor) {
         if (farg < 1 || farg > 4 ||
                 valor < 1 || valor > 13) {

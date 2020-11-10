@@ -1,4 +1,4 @@
-// en klass som hanterar en kortlek
+// en klass med metoder för att hanterar en kortlek
 
 public class Kortlek {
     // en kortbunt 52 platser i array
@@ -21,14 +21,14 @@ public class Kortlek {
         return namn;
     }
 
-    // innehlleet i kortleken
+    // en metod som räknar innehlleet i kortleken
     public void gorKortlek() {
         for (int f=1; f <= 4; f++)
             for (int v=1; v <= 13; v++)
                 laggOverst(new kortbunt(f, v));
     }
 
-    // blanda genom math.random
+        //  en memtod för att blanda kortleken genom math.random
     public void blanda() {
         for (int i=0; i < antal; i++) {
             int n=(int) (Math.random() * antal);

@@ -1,3 +1,5 @@
+/* en main metod som hanterar metoderna i mitt kortlek
+    samt utskfrifterna */
 
 public class Main {
 
