@@ -30,7 +30,7 @@
     }
         /**
          * en metod för retunera ett färgnamn
-         * @return
+         * @return ett fargnamn
          */
         public String geFarg() {
         return fargNamn[this.farg];
@@ -38,7 +38,7 @@
 
         /**
          * en metod för retunera ett valornamn
-         * @return
+         * @return ett valonamn
          */
 
     public String geValor() {
@@ -47,7 +47,7 @@
 
         /**
          * den retunerar valör för att kunna jämföra vem som vinner.
-         * @return
+         * @return valör
          */
     public int gepoang(){
         return this.valor;
@@ -55,7 +55,7 @@
 
         /**
          *  en string metod skriver ut objekt referenser som en string.
-         * @return
+         * @return referenser som string
          */
     public String toString() {
 
