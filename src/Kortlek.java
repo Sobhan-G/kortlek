@@ -4,12 +4,19 @@
  * En klass som hanterar själva kortleken
  */
 
+/**
+ * en klass för att hantera Kortbunt 52 platser i array
+ */
 public class Kortlek {
         // en Kortbunt 52 platser i array
     public final Kortbunt[] bunt=new Kortbunt[52];
 
     public int antal=0;
-        // en metod för att ge spelarna ett slumpmässigt kort
+    /**
+     * en metod för att ge spelarna ett slumpmässigt kort
+     * @return retunerar variablerna f och v
+      */
+
     public static Kortbunt slumpkort() {
         int F=(int) (Math.random() * 3) + 1;
         int v=(int) (Math.random() * 12) + 1;

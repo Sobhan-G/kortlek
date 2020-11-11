@@ -23,7 +23,7 @@
                 System.out.println("Spelare2 Du Vann!");
             else System.out.println("Oavgjort!");
             Scanner sc = new Scanner(System.in);
-            System.out.println("vill du spela igen? /n skriv j annars tryck på valfri tagent");
+            System.out.println("Vill du spela igen? skriv J \n Annars tryck på valfri tagent");
             String fortsatt = sc.next().toLowerCase();
             if (fortsatt.equals("j")) {
             }

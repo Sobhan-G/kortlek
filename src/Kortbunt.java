@@ -14,6 +14,11 @@
     public int farg;
     public int valor;
 
+        /**
+         *  en constructor som konstruerar ett kort efter färg och valör
+         * @param farg
+         * @param valor
+         */
     public Kortbunt(int farg, int valor) {
         if (farg < 1 || farg > 4 ||
                 valor < 1 || valor > 13) {
@@ -22,16 +27,36 @@
         }
         this.farg=farg;
         this.valor=valor;
-    }       //metode för att ge färg
-    public String geFarg() {
+    }
+        /**
+         * en metod för retunera ett färgnamn
+         * @return
+         */
+        public String geFarg() {
         return fargNamn[this.farg];
-    }       //metoder för att ge valör
+    }
+
+        /**
+         * en metod för retunera ett valornamn
+         * @return
+         */
+
     public String geValor() {
         return valorNamn[this.valor];
     }
+
+        /**
+         * den retunerar valör för att kunna jämföra vem som vinner.
+         * @return
+         */
     public int gepoang(){
         return this.valor;
     }
+
+        /**
+         *  en string metod skriver ut objekt referenser som en string.
+         * @return
+         */
     public String toString() {
 
         return String.format("%s %s ",geFarg() , geValor());
